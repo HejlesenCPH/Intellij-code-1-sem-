@@ -1,4 +1,4 @@
-package com.company;
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -29,7 +29,7 @@ public class Main {
 
 
         while ((line = reader.readLine()) != null)  {
-            int pizzaId = ,;
+            int pizzaId = 0;
             String pizza = "";
             int price = 0;
             scanner = new Scanner(line);
