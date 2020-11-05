@@ -9,12 +9,19 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    private BufferedReader reader;
 
-        BufferedReader reader = new BufferedReader(new FileReader(
-                "Pizzaer.csv"));
+    public static void main(String[] args) {
+        Main m = new Main();
+        try {
+            m.doStuff();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-
+    public void doStuff() throws IOException {
+        reader = new BufferedReader(new FileReader("Pizzaer.csv"));
         String line;
         Scanner scanner;
         int index = 0;
@@ -22,12 +29,12 @@ public class Main {
 
 
         while ((line = reader.readLine()) != null)  {
-            int pizzaId = 0;
+            int pizzaId = ,;
             String pizza = "";
             int price = 0;
             scanner = new Scanner(line);
             scanner.useDelimiter(";");
-            scanner.nextLine();
+            //scanner.nextLine();
             while (scanner.hasNext()) {
                 String data = scanner.next();
                 if (index == 0)
